@@ -1,0 +1,39 @@
+{
+  "$schema": "./.dt-app/app.config.schema.json",
+  "app": {
+    "name": "Extra Most Bestest Obsevability Scorcard",
+    "version": "1.2.0",
+    "description": "Signal coverage per service: metrics, traces, logs, events, SLOs",
+    "id": "my.extramostbestest",
+    "scopes": [
+      {
+        "name": "storage:buckets:read",
+        "comment": "required for every Grail table query"
+      },
+      {
+        "name": "storage:smartscape:read",
+        "comment": "smartscapeNodes \"SERVICE\" for the service rows"
+      },
+      {
+        "name": "storage:metrics:read",
+        "comment": "timeseries dt.service.request.count for Metrics coverage"
+      },
+      {
+        "name": "storage:spans:read",
+        "comment": "fetch spans for Traces coverage"
+      },
+      {
+        "name": "storage:logs:read",
+        "comment": "fetch logs for Logs coverage"
+      },
+      {
+        "name": "storage:events:read",
+        "comment": "fetch events for Cloud Events coverage"
+      },
+      {
+        "name": "slo:slos:read",
+        "comment": "serviceLevelObjectivesClient.getSlos for SLO coverage"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "super-app",
+  "version": "0.0.0",
+  "description": "A starting project with routing, fetching data, and charting",
+  "scripts": {
+    "build": "dt-app build",
+    "start": "dt-app dev",
+    "create:function": "dt-app function create",
+    "create:action": "dt-app action create",
+    "uninstall": "dt-app uninstall",
+    "deploy": "dt-app deploy",
+    "update": "dt-app update",
+    "info": "dt-app info",
+    "help": "dt-app help",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dynatrace-sdk/client-service-level-objectives": "^1.0.0",
+    "@dynatrace-sdk/react-hooks": "^1.14.2",
+    "@dynatrace/strato-components": "^3.13.0",
+    "@dynatrace/strato-design-tokens": "^1.7.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-intl": "7.1.14",
+    "react-is": "^18.3.1",
+    "react-router-dom": "^6.30.6"
+  },
+  "overrides": {
+    "react-intl": {
+      "typescript": "$typescript"
+    },
+    "@microsoft/eslint-plugin-sdl": {
+      "eslint": "^10.0.0"
+    },
+    "eslint-plugin-react": {
+      "eslint": "^10.0.0"
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@microsoft/eslint-plugin-sdl": "^1.1.0",
+    "@types/node": "^24.13.3",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "dt-app": "1.18.0",
+    "eslint": "^10.10.0",
+    "eslint-plugin-n": "^18.3.0",
+    "eslint-plugin-no-secrets": "^2.3.3",
+    "eslint-plugin-no-unsanitized": "^4.1.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-security": "^4.0.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.69.0",
+    "vitest": "^5.0.3"
+  }
+}
